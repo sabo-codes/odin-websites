@@ -24,9 +24,10 @@
 
   nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
   }
+
   ul {
     display: flex;
     margin: 0;
@@ -36,6 +37,11 @@
 
   .left{
     font-size: 24px;
+    margin-left: 50px;
+  }
+
+  .right {
+    margin-right: 50px;
   }
 
   header > h2 {
@@ -75,6 +81,11 @@
   button {
     background-color: #3882f6;
     border-radius: 5px;
+    color: white;
+  }
+
+  p + form > button {
+    border-color:  transparent;
   }
 
   .information {
@@ -83,12 +94,14 @@
     display: flex;
     justify-content: center;
     text-align: center;
+    padding-bottom: 75px;
   }
 
   header + h2 {
     text-align: center;
     color: #1F2937;
     font-size: 36px;
+    padding: 30px;
   }
 
   .box {
@@ -108,28 +121,43 @@
     color: #1F2937;
     font-size: 36px;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
     text-align: justify;
     font-style: italic;
-    padding: 50px;
+    padding: 75px;
   }
 
-  .quote > h4 {
+  p {
     margin: 0;
+  }
+  
+  h2, h4, h5 {
+    margin: 0;
+  }
+
+  h4 {
+    text-align: right;
+    width: 100%;
   }
   
   .action {
     display: flex;
     justify-content: center;
+    gap: 75px;
     margin: 50px;
     color: #E5E7EB;
-  }
-
-  .call {
     background-color: #3882f6;
     border-radius: 5px;
-    padding: 20px;
+    padding: 20px 50px;
+  }
+
+  .button {
+    display: flex;
+    align-items: center;
+  }
+  .button > form > button {
+    border-color: white;
   }
 
   footer {
