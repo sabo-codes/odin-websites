@@ -22,17 +22,32 @@
     color: #F9FaF8;
   }
 
-  nav {
+  /* nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
+  } */
 
-  ul {
+  /* ul {
     display: flex;
     margin: 0;
     padding: 0;
     gap: 16px;
+  } */
+
+  nav {
+    padding-left: 10px;
+    padding-right: 50px;
+  }
+
+  ul {
+    display: flex;
+    gap: 12px;
+  }
+
+  li.logo {
+    font-weight: bold;
+    margin-right: auto;
   }
 
   .left{
@@ -55,7 +70,7 @@
   
  a {
     color: #E5E7EB;
-    font-size: 18px;
+    font-size: 12px;
     text-decoration: none;
   }
 
@@ -95,6 +110,7 @@
     justify-content: center;
     text-align: center;
     padding-bottom: 75px;
+    gap: 12px;
   }
 
   header + h2 {
@@ -110,6 +126,10 @@
     width: 117.5px;
     height: 117.5px;
     margin: 0 auto;
+  }
+
+  .box + p {
+    max-width: 117.5px;
   }
   
   .info {
